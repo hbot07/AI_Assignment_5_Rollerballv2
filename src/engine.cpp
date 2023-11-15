@@ -263,7 +263,7 @@ int depth_0 = 0;
 int search_false = 0;
 bool is_white = false;
 
-int Engine::minimax(const Board &b, int depth, bool isMaximizingPlayer, int alpha, int beta,auto start_time) {
+int Engine::minimax(const Board &b, int depth, bool isMaximizingPlayer, int alpha, int beta,std::chrono::time_point<std::chrono::high_resolution_clock> start_time) {
     Board newBoard(b);
     int check_score = 0 ;
     if (depth == 0) {

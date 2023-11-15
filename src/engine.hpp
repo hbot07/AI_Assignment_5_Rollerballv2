@@ -10,7 +10,7 @@ class Engine : public AbstractEngine {
     // constructor.
     int num_moves = 0;
     float move_time = 2500;
-    int minimax(const Board &b, int depth, bool isMaximizingPlayer, int alpha, int beta,auto start_time);
+    int minimax(const Board &b, int depth, bool isMaximizingPlayer, int alpha, int beta, std::chrono::time_point<std::chrono::high_resolution_clock> start_time);
     public:
     void find_best_move(const Board& b) override;
 
